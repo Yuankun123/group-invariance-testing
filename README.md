@@ -21,7 +21,7 @@ An oracle Gaussian location-shift statistic is also included as a benchmark; it 
 
 This repository is a **public cleanup snapshot**, not the original development repository. The project was developed collaboratively in a separate private repository and later curated here for public release.
 
-Consequently, **the Git history of this repository does not represent the actual development process or individual contribution history**. Internal meeting notes, raw experiment logs, deprecated prototypes, extracted reference-paper text, local copies of third-party papers, and the original private Git history are intentionally excluded.
+Consequently, **the Git history of this repository does not represent the actual development process or individual contribution history**.
 
 ## What is implemented
 
