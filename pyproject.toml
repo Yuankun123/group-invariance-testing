@@ -5,12 +5,25 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "group-invariance-testing"
 version = "0.1.0"
-description = "Research implementation of anytime-valid sequential group-invariance tests"
+description = "Research implementation of anytime-valid group-invariance tests with kernel, adaptive Gaussian, and neural statistics"
 readme = "README.md"
 requires-python = ">=3.10"
+keywords = [
+    "statistics",
+    "hypothesis-testing",
+    "sequential-testing",
+    "group-invariance",
+    "e-values",
+    "kernel-methods",
+    "neural-networks",
+]
 dependencies = [
     "numpy>=1.24",
 ]
+
+[project.urls]
+Repository = "https://github.com/Yuankun123/group-invariance-testing"
+Reference = "https://arxiv.org/abs/2310.01153v3"
 
 [project.optional-dependencies]
 neural = [
