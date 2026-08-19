@@ -8,6 +8,7 @@ version = "0.1.0"
 description = "Research implementation of anytime-valid group-invariance tests with kernel, adaptive Gaussian, and neural statistics"
 readme = "README.md"
 requires-python = ">=3.10"
+license = {file = "LICENSE"}
 keywords = [
     "statistics",
     "hypothesis-testing",
@@ -16,6 +17,9 @@ keywords = [
     "e-values",
     "kernel-methods",
     "neural-networks",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
     "numpy>=1.24",
