@@ -16,6 +16,9 @@ dependencies = [
 neural = [
     "torch>=2.0",
 ]
+test = [
+    "pytest>=8",
+]
 
 [tool.setuptools.packages.find]
 include = ["group_invariance_testing*"]

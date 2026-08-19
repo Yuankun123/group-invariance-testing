@@ -31,8 +31,6 @@ pip install -e ".[neural]"
 
 ## Quick start
 
-A lightweight non-neural experiment can be run from Python:
-
 ```python
 from group_invariance_testing import (
     ExperimentConfig,
@@ -57,15 +55,28 @@ python -m group_invariance_testing.non_normal_sign_flip_demo --runs 100 --steps 
 
 The first demo enables the neural strategy by default and can therefore be substantially slower.
 
+## Testing
+
+The lightweight test suite does not require PyTorch; neural tests are skipped when PyTorch is unavailable.
+
+```bash
+pip install -e ".[test]"
+pytest -q
+```
+
+GitHub Actions runs this suite on pushes and pull requests.
+
 ## Repository layout
 
 ```text
 group_invariance_testing/   Core implementation and experiment drivers
+tests/                      Lightweight correctness and reproducibility checks
+.github/workflows/          Continuous-integration configuration
 README.md                   Project overview and usage
-pyproject.toml              Minimal package/dependency metadata
+pyproject.toml              Package and dependency metadata
 ```
 
-This public repository intentionally excludes internal meeting notes, raw experiment logs, deprecated prototypes, extracted reference-paper text, and local copies of third-party papers from the original research workspace.
+This public repository intentionally excludes internal meeting notes, raw experiment logs, deprecated prototypes, extracted reference-paper text, local copies of third-party papers, and the private repository's Git history.
 
 ## Related work
 
@@ -74,4 +85,4 @@ This public repository intentionally excludes internal meeting notes, raw experi
 
 ## Status
 
-This is research code accompanying a completed collaborative project. The public repository is intended to provide a concise, reproducible snapshot of the implementation; the API may still be cleaned further without changing the underlying experiments.
+This is research code accompanying a completed collaborative project. The public repository is intended to provide a concise, reproducible snapshot of the implementation. The public API is small and the original research workspace remains private.

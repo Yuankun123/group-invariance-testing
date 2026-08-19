@@ -1,7 +1,14 @@
 """Top-level exports for the group-invariance testing framework."""
 
-from .DynamicT import KDET, KDE_T, MeanOnlyGaussianT, MovingGaussianT, RunningMeanGaussianT
-from .core import ActionGroup, DataGenerator, DynamicT, LogEvidenceUpdater, SampleSpace, SequentialTest
+from .core import (
+    ActionGroup,
+    DataGenerator,
+    DynamicT,
+    LogEvidenceUpdater,
+    SampleSpace,
+    SequentialTest,
+)
+from .dynamic_t import KDET, KDE_T, MeanOnlyGaussianT, MovingGaussianT, RunningMeanGaussianT
 from .experiment_driver import (
     ExperimentConfig,
     ExperimentResult,
@@ -10,13 +17,13 @@ from .experiment_driver import (
     build_default_sign_flip_strategies,
     run_experiment,
 )
-from .neuralT import (
+from .neural_t import (
     GeneralOrbitNeuralLogEvidenceUpdater,
     GeneralOrbitNeuralT,
     SignFlipNeuralLogEvidenceUpdater,
     SignFlipNeuralT,
 )
-from .orcaleT import OracleT
+from .oracle_t import OracleT
 from .space_and_group import EuclideanSpace, NormalDistributionOnRn, SignFlipGroup
 
 __all__ = [
